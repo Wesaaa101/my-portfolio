@@ -1,0 +1,272 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+
+/* Header */
+header {
+    background-color: #111827;
+    padding: 20px 8%;
+}
+
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* Hero section */
+.hero {
+    min-height: 80vh;
+    padding: 70px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* Hero text */
+.hero-text {
+    max-width: 600px;
+}
+
+
+.welcome {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+
+    padding: 12px 25px;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Profile image */
+.hero-image img {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 6px solid #2563eb;
+}
+
+
+/* General section styling */
+section {
+    padding: 70px 8%;
+}
+
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+/* About section */
+.about {
+    background-color: white;
+}
+
+
+.about p {
+    max-width: 800px;
+    font-size: 18px;
+}
+
+
+/* Projects section */
+.projects {
+    text-align: center;
+}
+
+
+.projects p {
+    font-size: 18px;
+}
+
+
+/* Contact section */
+.contact {
+    background-color: white;
+}
+
+
+.contact p {
+    margin: 10px 0;
+}
+
+
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* RESPONSIVE DESIGN */
+/* This makes the website work nicely on phones */
+
+@media (max-width: 768px) {
+
+    /* Stack the navigation */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        gap: 15px;
+    }
+
+
+    /* Stack hero content */
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    /* Make photo smaller on phones */
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+
+    section {
+        padding: 50px 5%;
+    }
+
+}
+
+
+/* Extra small phones */
+@media (max-width: 400px) {
+
+    .nav-links {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+}
