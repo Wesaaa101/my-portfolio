@@ -1,42 +1,31 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Gladwell's personal portfolio - Software Development student at KCA University">
     <title>Gladwell | Personal Portfolio</title>
-
-    <!-- Link to our external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
         <nav>
             <h2 class="logo">GLADWELL</h2>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-
-    <!-- Main content -->
     <main>
-
-        <!-- Hero Section -->
         <section id="home" class="hero">
-
             <div class="hero-text">
                 <p class="welcome">WELCOME TO MY PORTFOLIO</p>
-
                 <h1>Hi, I'm <span>Gladwell</span> 👋</h1>
-
                 <h2>Aspiring Software Developer & IT Student</h2>
 
                 <p>
@@ -45,21 +34,16 @@
                 </p>
 
                 <a href="#contact" class="button">Contact Me</a>
+                <a href="projects.html" class="button secondary-button">View Projects</a>
             </div>
 
             <div class="hero-image">
-                <!-- Replace photo.jpg with your own photo -->
                 <img src="photo.jpg" alt="Professional photo of Gladwell">
             </div>
-
         </section>
 
-
-        <!-- About Me Section -->
         <section id="about" class="about">
-
             <h2>About Me</h2>
-
             <p>
                 My name is Gladwell, and I am currently studying Software
                 Development at KCA University. I am interested in learning
@@ -67,73 +51,59 @@
                 can be used to solve everyday problems. I am continuously
                 developing my programming and web development skills.
             </p>
-
         </section>
 
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-
-            <h2>Projects</h2>
-
-            <p>
-                My projects section will be updated with my work and
-                projects as I continue developing my skills.
-            </p>
-
-        </section>
-
-
-        <!-- Contact Section -->
         <section id="contact" class="contact">
-
             <h2>Contact Me</h2>
+            <p>I would love to connect with you.</p>
 
-            <p>
-                I would love to connect with you.
-            </p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> wesagladwell@gmail.com</p>
 
-            <p>
-                <strong>Email:</strong>
-                 wesagladwell@gmail.com
-            </p>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/Wesaaa101" target="_blank" rel="noopener noreferrer">
+                        My GitHub
+                    </a>
+                </p>
 
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/" target="_blank">
-                    My GitHub
-                </a>
-            </p>
+                <p>
+                    <strong>LinkedIn:</strong>
+                    <a href="#" aria-label="LinkedIn profile coming soon">
+                        My LinkedIn
+                    </a>
+                </p>
+            </div>
 
-            <p>
-                <strong>LinkedIn:</strong>
-                <a href="#" target="_blank">
-                    My LinkedIn
-                </a>
-            </p>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <small class="error-message" id="nameError"></small>
+                </div>
 
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <small class="error-message" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+                    <small class="error-message" id="messageError"></small>
+                </div>
+
+                <button type="submit" class="button">Send Message</button>
+                <p id="formSuccess" class="success-message" role="status"></p>
+            </form>
         </section>
-
     </main>
 
-
-    <!-- Footer -->
     <footer>
         <p>© 2026 Gladwell. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-</html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
-
-<body>
-  
-</body>
-
 </html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gladwell's projects, skills and services">
+    <title>Gladwell | Projects & Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">GLADWELL</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="welcome">MY WORK & SKILLS</p>
+            <h1>Projects, Skills & <span>Services</span></h1>
+            <p>
+                Here are some of the skills I am developing and projects I have
+                worked on as a Software Development student.
+            </p>
+        </section>
+
+        <section class="skills-section">
+            <h2>My Skills</h2>
+            <p class="section-intro">
+                My current skills and approximate proficiency levels as I continue learning.
+            </p>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-heading">
+                        <h3>HTML5</h3>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-heading">
+                        <h3>CSS3</h3>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-heading">
+                        <h3>JavaScript</h3>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-bar" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-heading">
+                        <h3>Python</h3>
+                        <span>55%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-bar" style="width: 55%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-heading">
+                        <h3>Git & GitHub</h3>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-heading">
+                        <h3>Problem Solving</h3>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h2>My Projects</h2>
+            <p class="section-intro">
+                Course work and personal projects that show my progress in web and software development.
+            </p>
+
+            <div class="filter-buttons" aria-label="Project filters">
+                <button class="filter-btn active-filter" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="coursework">Coursework</button>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card" data-category="web">
+                    <div class="project-icon">💻</div>
+                    <div class="project-content">
+                        <span class="project-category">Web Development</span>
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            A personal portfolio website created to introduce myself,
+                            display my skills and share my work as an aspiring software developer.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a class="project-link"
+                           href="https://github.com/Wesaaa101/my-portfolio"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View GitHub →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="coursework">
+                    <div class="project-icon">🖥️</div>
+                    <div class="project-content">
+                        <span class="project-category">Coursework</span>
+                        <h3>Von Neumann Architecture</h3>
+                        <p>
+                            A computer architecture coursework project covering the main
+                            components and operation of the Von Neumann architecture.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>Research</span>
+                            <span>Documentation</span>
+                            <span>Diagrams</span>
+                        </div>
+
+                        <a class="project-link" href="#" onclick="showComingSoon(event)">
+                            Coming Soon →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="coursework">
+                    <div class="project-icon">🌐</div>
+                    <div class="project-content">
+                        <span class="project-category">Coursework</span>
+                        <h3>Web Technologies Practice</h3>
+                        <p>
+                            Practical work for CSN 1101 focused on HTML structure,
+                            CSS styling and JavaScript interactivity for responsive websites.
+                        </p>
+
+                        <div class="tech-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a class="project-link" href="projects.html">
+                            View Project →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Services</h2>
+            <p class="section-intro">
+                These are services I can currently offer while continuing to build my experience.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Basic Website Design</h3>
+                    <p>Creating simple, clean and responsive websites using HTML and CSS.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Website Styling</h3>
+                    <p>Improving page layouts, typography, spacing and responsive presentation.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Beginner Tutoring</h3>
+                    <p>Helping beginners understand basic HTML, CSS and introductory programming concepts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="assignment-note">
+            <h2>Currently Learning</h2>
+            <p>
+                I am continuing to develop my JavaScript, Python, web development and
+                problem-solving skills as part of my Software Development studies at KCA University.
+            </p>
+            <a href="index.html#contact" class="button">Contact Me</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Gladwell. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
