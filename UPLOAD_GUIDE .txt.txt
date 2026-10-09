@@ -1,0 +1,19 @@
+CSN 1101 ASSIGNMENT 3 — UPLOAD GUIDE
+
+FILES IN THIS ZIP
+- index.html
+- projects.html
+- script.js
+- style.css
+- README.md
+
+IMPORTANT
+1. Keep your existing photo.jpg in the repository. The home page uses that filename for your portrait.
+2. Upload these files into the ROOT of your existing GitHub repository (not into a new subfolder).
+3. If GitHub asks whether to replace existing index.html or README.md, choose replace/overwrite because these are the Assignment 3 versions.
+4. Make sure style.css is named exactly style.css. Your current repository has a file named " style (1).css"; the new HTML links to style.css.
+5. Do not delete photo.jpg.
+6. After uploading, wait for GitHub Pages and Vercel to redeploy, then test both live URLs.
+7. Before submitting, run Lighthouse and enter your actual before/after scores in README.md.
+
+This package cannot publish to your accounts automatically. You must upload/commit the files while signed in to GitHub.

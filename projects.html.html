@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Gladwell's public GitHub repositories and software development learning projects.">
+  <meta name="theme-color" content="#101827">
+  <title>Projects | Gladwell</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="index.html">GLADWELL<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">MY WORK, FETCHED LIVE</p>
+        <h1>Projects &amp; <span>Repositories</span></h1>
+        <p class="page-intro">This section uses JavaScript Fetch to request public repository data from the GitHub API and displays the returned JSON on this page.</p>
+        <a class="button button-secondary" href="https://github.com/Wesaaa101" target="_blank" rel="noopener noreferrer">Visit my GitHub ↗</a>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="repo-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LIVE API INTEGRATION</p>
+          <h2 class="section-title" id="repo-heading">My public repositories</h2>
+        </div>
+        <button class="button button-secondary button-small" id="retry-repos" type="button">Refresh data</button>
+      </div>
+      <p class="muted">Data source: <code>api.github.com/users/Wesaaa101/repos</code></p>
+      <p id="repo-status" class="status-message" role="status" aria-live="polite">Loading projects…</p>
+      <div id="repo-list" class="repo-grid" aria-live="polite"></div>
+      <noscript><p class="error-message">Please enable JavaScript to load live repository information.</p></noscript>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container narrow">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2 class="section-title">A live request, not a hard-coded list</h2>
+        <p>The browser sends a request to GitHub, checks whether the request succeeded, reads the JSON response, and creates repository cards using safe DOM methods. If the request fails, the page displays a friendly error and lets visitors try again.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Gladwell. Built while learning web development.</p>
+      <a href="index.html">Back home ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
